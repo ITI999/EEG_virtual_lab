@@ -1,0 +1,226 @@
+#editor{
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-right:  1px solid #7a7a7a;
+}
+
+#container{
+    width: 978px;
+    height: 662px;
+    display: flex;
+    border: 1px solid #7a7a7a;
+}
+
+#editor{
+    display: inline;
+    height: auto;
+    width: 35%;
+}
+
+.output{
+    display: inline;
+    height: auto;
+    width: 65%;
+}
+
+img, #resultInd {
+    width: 100%;
+    height: 70%;
+    overflow: scroll;
+}
+
+
+#errors, #buffer{
+    position: absolute;
+    z-index: 1;
+    top: 68px;
+    left: 353px;
+    width: 609px;
+    padding: 15px;
+    visibility: hidden;
+    background-color: #cc3e38;
+}
+
+
+
+
+.vlab_name {
+    display: inline-block;
+    text-align: left;
+}
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    padding: 6px 12px;
+    font-family: Tahoma, serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border: 1px solid #65b7ee;
+    outline: none;
+    border-radius: 13px;
+    min-width: 120px;
+    color: #fff;
+    height: 39px;
+    background-image: linear-gradient(to bottom, #8fd8fb, #79b1fb);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+
+.btn:hover {
+    background: #65b7ee;
+}
+
+.btn.not_active {
+    background-image: linear-gradient(to bottom, #8fd8fb, #8fd8fb);
+    cursor: auto;
+    border-color: #8fd8fb;
+}
+
+.btn.btn_help, .btn.btn_play {
+    font-size: 14px;
+    margin: 0;
+}
+
+.block_title {
+    width: auto;
+    margin: 0;
+    background-color: #b5b8b5;
+    padding: 0 15px;
+    font-size: 20px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.block_title input {
+    float: right;
+}
+
+.block_title .vlab_name {
+
+    display: inline-block;
+    text-align: left;
+}
+
+
+
+.b-container{
+    width:200px;
+    height:150px;
+    background-color: #ccc;
+    margin:0px auto;
+    padding:10px;
+    font-size:30px;
+    color: #fff;
+    z-index: 2;
+
+}
+.b-popup{
+    width:100%;
+    height: 2000px;
+    background-color: rgba(0,0,0,0.5);
+    overflow:hidden;
+    position:fixed;
+    top:0px;
+    z-index: 98;
+}
+.b-popup .b-popup-content{
+    z-index: 99;
+    margin:40px auto 0px auto;
+    width: 600px;
+    height: 630px;
+    padding: 30px;
+    background-color: #dddddd;
+    border-radius:5px;
+    box-shadow: 0px 0px 10px #3d3d3d;
+}
+
+#LaTeX_img{
+    width: 140px;
+    height: 50px;
+}
+
+.b-popup .b-popup-content .btn{
+    float: right;
+}
+
+.btn_graph, .btn_start, .btn_hist, .btn_table{
+    margin-left: 30px;
+}
+
+
+body, p, li, input, label {
+    font-family: "Times New Roman", Arial, serif;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+#question{
+    border-top: 1px solid #7a7a7a;
+    padding: 10px;
+}
+
+
+#resultTable  {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 14px;
+    border-collapse: collapse;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+#resultTable th, #resultTable td:first-child {
+    background: #AFCDE7;
+    color: white;
+    padding: 10px 20px;
+}
+#resultTable th, #resultTable td {
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    border-color: white;
+}
+#resultTable td {
+    background: #D8E6F3;
+}
+#resultTable th:first-child, #resultTable td:first-child {
+    text-align: left;
+}
+
+#MainContainer {
+    height: 740px;
+    width: 980px;
+}
+
+.disabledButton {
+    cursor: pointer;
+    display: inline-block;
+    padding: 6px 12px;
+    font-family: Tahoma, serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border: 1px solid #5a5a5a;
+    outline: none;
+    border-radius: 13px;
+    min-width: 120px;
+    color: #fff;
+    height: 39px;
+    background-image: linear-gradient(to bottom, #b5b8b5, #7a7a7a);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+

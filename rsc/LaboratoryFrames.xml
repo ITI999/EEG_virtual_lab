@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<LaboratoryFrames>
+	<FrameIndex Scheme="3" FrameID="402">
+		<LaboratoryFrame Name="Анализ электроэнцефалограммы" TimeLimit="180" TimeScale="Minute" ShowTime="Yes" Language="ru">
+			<ToolIndex Scheme="3" ToolID="42"/>
+			<Data contentType="xhtml">Проведите анализ электроэнцефалограммы используя метод спектрального анализа</Data>
+			<LaboratoryTestsGroups LaboratoryTestsGroupsID="1" LimitOnCollection="10800" LimitOnTest="10800" TimeScale="Second"
+								   URL="rlcp://user:user@127.0.0.1:3000" Weight="1" >
+				<LaboratoryTestsGroup LaboratoryTestsGroupID="1" Number="1" LimitOnTest="10800" TimeScale="Second" Weight="1"
+									   >
+					<LaboratoryTest TestID="1" LimitOnTest="10800" TimeScale="Second" Weight="1" >
+						<LaboratoryTestInput>
+							<!-- some -->
+						</LaboratoryTestInput>
+						<LaboratoryTestOutput>
+							<!-- somw -->
+						</LaboratoryTestOutput>
+					</LaboratoryTest>
+				</LaboratoryTestsGroup>
+			</LaboratoryTestsGroups>
+			<Generator>
+				<ByDefault>
+					<Text>
+						<!-- Информация для отображения пользователю, если север ВЛ недоступен -->
+					</Text>
+					<Code>
+						<!-- Информация для лабораторной установки, если север ВЛ недоступен -->
+					</Code>
+					<Instructions>
+						<!-- Инструкции по проверки решения, если сервер ВЛ недоступен -->
+					</Instructions>
+				</ByDefault>
+				<Algorithm>
+					<!-- Инструкции для генерирования - идет в condition у метода generate-->
+				</Algorithm>
+			</Generator>
+		</LaboratoryFrame>
+	</FrameIndex>
+</LaboratoryFrames>
